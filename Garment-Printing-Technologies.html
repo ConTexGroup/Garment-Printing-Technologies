@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garment Printing Technologies</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Custom styles for glowing neon buttons */
+        .neon-button {
+            background-color: #e0e0e0; /* Light gray base */
+            color: #000; /* Dark text for contrast */
+            border: none;
+            border-radius: 0.5rem; /* rounded-lg */
+            padding: 0.75rem 1.5rem; /* py-3 px-6 */
+            font-weight: 600; /* font-semibold */
+            font-size: 1.125rem; /* text-lg sm:text-xl */
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+            box-shadow:
+                0 0 5px #0ff, /* Cyan glow */
+                0 0 10px #0ff,
+                0 0 15px #0ff,
+                0 0 20px #0ff,
+                0 0 25px #0ff,
+                0 0 30px #0ff,
+                0 0 35px #0ff,
+                0 0 40px #0ff;
+            /* Flexbox for text and icon alignment */
+            display: inline-flex; /* Use inline-flex for buttons that might be side-by-side */
+            align-items: center;
+            justify-content: center; /* Center content horizontally */
+        }
+
+        .neon-button:hover {
+            box-shadow:
+                0 0 10px #0ff, /* Stronger glow on hover */
+                0 0 20px #0ff,
+                0 0 30px #0ff,
+                0 0 40px #0ff,
+                0 0 50px #0ff,
+                0 0 60px #0ff,
+                0 0 70px #0ff,
+                0 0 80px #0ff;
+            background-color: #ffffff; /* Brighter on hover */
+            color: #000;
+        }
+
+        .neon-button:active {
+            box-shadow:
+                0 0 2px #0ff, /* Subtle glow on active */
+                0 0 5px #0ff;
+            transform: translateY(1px); /* Slight press effect */
+            background-color: #d0d0d0;
+        }
+
+        /* Style for active accordion header */
+        .accordion-header.active {
+            background-color: #2a3a4c; /* Slightly lighter dark blue for active header */
+        }
+
+        /* Base styles for accordion headers to include flex for icon */
+        .accordion-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 flex flex-col min-h-screen">
+
+    <div class="container mx-auto p-4 sm:p-6 md:p-8 lg:p-10 flex-grow">
+        <!-- Infographic Title and new button -->
+        <div class="text-center mb-8 sm:mb-12 mt-4 sm:mt-8">
+            <button class="neon-button text-3xl sm:text-4xl md:text-5xl font-bold p-4 rounded-xl mb-4"
+                    onclick="window.open('https://www.conbello.com/blog/Which-is-the-best-brand-logo-printing-method-in-sportswear', '_blank')">
+                At Conbello Textile, we use a variety of printing technologies depending on the specifics of the garment and design.
+                <!-- Clickable indicator icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-3 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+            </button>
+            <button class="neon-button text-lg sm:text-xl font-semibold py-3 px-6"
+                    onclick="window.open('https://www.conbello.com/High-Quality-gym-clothes-manufacturing-Conbello-Textile-contact', '_blank')">
+                Send your designs directly to the manufacturing department
+                <!-- Clickable indicator icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-3 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="space-y-6 max-w-4xl mx-auto">
+            <!-- Screen Printing Section -->
+            <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                <button class="accordion-header w-full text-left py-4 px-6 md:px-8 text-xl sm:text-2xl font-semibold bg-gray-700 hover:bg-gray-600 transition duration-300 rounded-t-xl focus:outline-none">
+                    <span>Screen Printing</span>
+                    <!-- Clickable indicator icon for accordion -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+                <div class="accordion-content p-6 md:p-8 hidden">
+                    <p class="mb-6 text-gray-300 leading-relaxed text-base sm:text-lg">
+                        Screen printing, a traditional yet continuously evolving technique, uses a mesh to transfer ink onto a substrate, meticulously controlling where ink passes through to form the design. Modern advancements have propelled it to the forefront of garment decoration.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-6 justify-center flex-wrap">
+                        <button class="toggle-button neon-button mb-2 sm:mb-0" data-target="screen-advantages">
+                            <span>Advantages</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                        </button>
+                        <button class="toggle-button neon-button mb-2 sm:mb-0" data-target="screen-limitations">
+                            <span>Limitations</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                        </button>
+                        <button class="toggle-button neon-button mb-2 sm:mb-0" data-target="water-based-screen-printing">
+                            <span>Water-Based Printing</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                        </button>
+                        <button class="toggle-button neon-button mb-2 sm:mb-0" data-target="plastisol-screen-printing">
+                            <span>Plastisol-Based Printing</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                        </button>
+                    </div>
+
+                    <div id="screen-advantages" class="content-panel bg-gray-700 p-5 rounded-lg border border-gray-600 hidden">
+                        <h4 class="font-bold text-lg text-green-400 mb-3">Advantages:</h4>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-200 text-base sm:text-lg">
+                            <li>Unparalleled durability and exceptionally vibrant colors, ensuring designs stand the test of time and repeated washes.</li>
+                            <li>Achieves photo-quality printing with incredible precision, rendering intricate details and complex imagery flawlessly.</li>
+                            <li>Seamless color transitions (gradients) are now expertly managed, providing smooth and aesthetically pleasing visual effects.</li>
+                            <li>Highly cost-effective for large production volumes, making it the preferred choice for bulk orders.</li>
+                            <li>Remarkably versatile across a wide array of fabric types and compositions.</li>
+                        </ul>
+                    </div>
+                    <div id="screen-limitations" class="content-panel bg-gray-700 p-5 rounded-lg border border-gray-600 hidden">
+                        <h4 class="font-bold text-lg text-red-400 mb-3">Limitations:</h4>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-200 text-base sm:text-lg">
+                            <li>Cost inefficiency for low-volume production runs due to initial setup and screen preparation expenses.</li>
+                            <li>While modern technology has minimized issues, very complex, multi-color designs with extreme fine detail might still require careful planning.</li>
+                            <li>Thanks to developing technology, meticulous application, and extensive experience, screen printing is now widely recognized as the highest quality printing method available.</li>
+                        </ul>
+                    </div>
+                     <div id="water-based-screen-printing" class="content-panel bg-gray-700 p-5 rounded-lg border border-gray-600 hidden">
+                        <h4 class="font-bold text-lg text-blue-400 mb-3">Water-Based Screen Printing:</h4>
+                        <p class="text-gray-200 text-base sm:text-lg mb-3">Water-based inks utilize water as their primary solvent. They penetrate the fabric, resulting in a soft, breathable print that feels like part of the garment itself.</p>
+                        <h5 class="font-semibold text-md text-green-400 mb-2">Pros:</h5>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-200 text-base sm:text-lg">
+                            <li>Extremely soft hand feel.</li>
+                            <li>Highly breathable, ideal for activewear.</li>
+                            <li>Environmentally friendly with easier cleanup.</li>
+                            <li>Exceptional vibrancy and opacity on all fabric colors.</li>
+                        </ul>
+                        <h5 class="font-semibold text-md text-red-400 mt-4 mb-2">Cons:</h5>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-200 text-base sm:text-lg">
+                            <li>It works easier on light-colored fabrics; on darker fabrics, applying a layer of barrier ink before starting the main print ensures a flawless finish.</li>
+                            <li>Because water-based screen printing ink is self-drying, it must be applied carefully and worked quickly. It requires experience.</li>
+                        </ul>
+                    </div>
+                    <div id="plastisol-screen-printing" class="content-panel bg-gray-700 p-5 rounded-lg border border-gray-600 hidden">
+                        <h4 class="font-bold text-lg text-blue-400 mb-3">Plastisol-Based Screen Printing:</h4>
+                        <p class="text-gray-200 text-base sm:text-lg mb-3">Plastisol inks are PVC-based and sit on top of the fabric. They are known for their vibrant colors and opaque finish, requiring heat to cure.</p>
+                        <h5 class="font-semibold text-md text-green-400 mb-2">Pros:</h5>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-200 text-base sm:text-lg">
+                            <li>Exceptional vibrancy and opacity on all fabric colors.</li>
+                            <li>Excellent durability, resistant to cracking and fading.</li>
+                            <li>Easy to work with, predictable results.</li>
+                        </ul>
+                        <h5 class="font-semibold text-md text-red-400 mt-4 mb-2">Cons:</h5>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-200 text-base sm:text-lg">
+                            <li>Thicker hand feel, less breathable than water-based.</li>
+                            <li>Requires specific curing temperatures.</li>
+                            <li>Contains PVC and phthalates (though eco-friendly alternatives exist).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sublimation Printing Section -->
+            <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                <button class="accordion-header w-full text-left py-4 px-6 md:px-8 text-xl sm:text-2xl font-semibold bg-gray-700 hover:bg-gray-600 transition duration-300 focus:outline-none">
+                    <span>Sublimation Printing</span>
+                    <!-- Clickable indicator icon for accordion -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+                <div class="accordion-content p-6 md:p-8 hidden">
+                    <p class="mb-6 text-gray-300 leading-relaxed text-base sm:text-lg">
+                        Sublimation printing uses heat to transform solid dye into a gas, infusing it directly into the fabric fibers. This process creates a remarkably smooth, permanent, and breathable print.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-6 justify-center">
+                        <button class="toggle-button neon-button" data-target="sublimation-pros">
+                            <span>Advantages</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                        </button>
+                        <button class="toggle-button neon-button" data-target="sublimation-cons">
+                            <span>Disadvantages</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                        </button>
+                    </div>
+
+                    <div id="sublimation-pros" class="content-panel bg-gray-700 p-5 rounded-lg border border-gray-600 hidden">
+                        <h4 class="font-bold text-lg text-green-400 mb-3">Advantages:</h4>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-200 text-base sm:text-lg">
+                            <li>Produces stunning, full-color, photographic-quality prints with incredibly sharp details and smooth gradients.</li>
+                            <li>The print becomes an integral part of the fabric, ensuring zero cracking, peeling, or fading, even after extensive washing and wear.</li>
+                            <li>Allows for true all-over printing and seamless, complex designs across the entire garment.</li>
+                            <li>Results in a soft, breathable finish as there is no added layer on top of the fabric.</li>
+                        </ul>
+                    </div>
+                    <div id="sublimation-cons" class="content-panel bg-gray-700 p-5 rounded-lg border border-gray-600 hidden">
+                        <h4 class="font-bold text-lg text-red-400 mb-3">Disadvantages:</h4>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-200 text-base sm:text-lg">
+                            <li>Strictly limited to polyester or high-polyester blend fabrics; natural fibers like cotton simply cannot be sublimated.</li>
+                            <li>Completely ineffective on dark-colored garments, as the dyes are translucent and will not show up.</li>
+                            <li>While providing superior quality, the initial investment in equipment can be substantially higher.</li>
+                            <li>White "creasing" or "voids" can occur in areas where the fabric folds during the heat press, especially on pre-sewn garments.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Heat Transfer Printing Section -->
+            <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                <button class="accordion-header w-full text-left py-4 px-6 md:px-8 text-xl sm:text-2xl font-semibold bg-gray-700 hover:bg-gray-600 transition duration-300 focus:outline-none">
+                    <span>Heat Transfer Printing</span>
+                    <!-- Clickable indicator icon for accordion -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+                <div class="accordion-content p-6 md:p-8 hidden">
+                    <p class="mb-6 text-gray-300 leading-relaxed text-base sm:text-lg">
+                        Heat transfer printing involves meticulously pressing a design from a specialized transfer paper onto fabric using precise heat and pressure. This method creates a distinct, thin layer of material directly on top of the garment.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-6 justify-center">
+                        <button class="toggle-button neon-button" data-target="heat-transfer-pros">
+                            <span>Advantages</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                        </button>
+                        <button class="toggle-button neon-button" data-target="heat-transfer-cons">
+                            <span>Disadvantages</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                        </button>
+                    </div>
+
+                    <div id="heat-transfer-pros" class="content-panel bg-gray-700 p-5 rounded-lg border border-gray-600 hidden">
+                        <h4 class="font-bold text-lg text-green-400 mb-3">Advantages:</h4>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-200 text-base sm:text-lg">
+                            <li>Highly cost-effective for small runs and individual custom designs, offering great flexibility.</li>
+                            <li>Can be applied to an incredibly diverse range of fabric types and colors, making it very versatile.</li>
+                            <li>Offers remarkably quick turnaround times and requires minimal setup, perfect for urgent orders.</li>
+                        </ul>
+                    </div>
+                    <div id="heat-transfer-cons" class="content-panel bg-gray-700 p-5 rounded-lg border border-gray-600 hidden">
+                        <h4 class="font-bold text-lg text-red-400 mb-3">Disadvantages:</h4>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-200 text-base sm:text-lg">
+                            <li>Significantly less durable than screen printing or sublimation, often prone to cracking, peeling, or fading over time and with repeated washing.</li>
+                            <li>The print can unfortunately feel heavy, rigid, or noticeably "plasticky" on the garment, impacting comfort and drape.</li>
+                            <li>Generally not ideal for large, intricate designs or those requiring a soft, integrated feel.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Direct-to-Garment (DTG) Printing Section -->
+            <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                <button class="accordion-header w-full text-left py-4 px-6 md:px-8 text-xl sm:text-2xl font-semibold bg-gray-700 hover:bg-gray-600 transition duration-300 focus:outline-none">
+                    <span>Direct-to-Garment (DTG) Printing</span>
+                    <!-- Clickable indicator icon for accordion -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+                <div class="accordion-content p-6 md:p-8 hidden">
+                    <p class="mb-6 text-gray-300 leading-relaxed text-base sm:text-lg">
+                        Direct-to-Garment (DTG) printing is a revolutionary method that applies ink directly onto textiles using advanced inkjet technology. This allows for unparalleled detail and color reproduction without the need for screens or transfers.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-6 justify-center">
+                        <button class="toggle-button neon-button" data-target="dtg-pros">
+                            <span>Advantages</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                        </button>
+                        <button class="toggle-button neon-button" data-target="dtg-cons">
+                            <span>Disadvantages</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                        </button>
+                    </div>
+
+                    <div id="dtg-pros" class="content-panel bg-gray-700 p-5 rounded-lg border border-gray-600 hidden">
+                        <h4 class="font-bold text-lg text-green-400 mb-3">Advantages:</h4>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-200 text-base sm:text-lg">
+                            <li>Achieves truly exceptional detail and photorealistic imagery with virtually unlimited color options, perfect for complex graphics and photographs.</li>
+                            <li>Ideal for intricate designs, fine lines, and smooth gradients, where traditional methods might struggle.</li>
+                            <li>Perfectly suited for small order quantities and even single-item custom prints, with no setup fees or minimums.</li>
+                            <li>Provides a soft, breathable feel on the garment, as the ink is absorbed into the fabric fibers rather than sitting on top.</li>
+                            <li>Eco-friendly water-based inks are often used, contributing to a lower environmental impact.</li>
+                        </ul>
+                    </div>
+                    <div id="dtg-cons" class="content-panel bg-gray-700 p-5 rounded-lg border border-gray-600 hidden">
+                        <h4 class="font-bold text-lg text-red-400 mb-3">Disadvantages:</h4>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-200 text-base sm:text-lg">
+                            <li>Significantly higher cost per garment for large production runs compared to the economic efficiency of screen printing, making it financially impractical for bulk orders.</li>
+                            <li>Prints on darker fabrics can sometimes appear noticeably less vibrant, dull, and faded without a meticulously applied white underbase, which adds to complexity and cost.</li>
+                            <li>The durability of DTG prints, while improving, is generally not as robust as screen printing, with a potential for premature fading or cracking over repeated washes, especially if care instructions are not strictly followed.</li>
+                            <li>Can be a very slow process for high-volume orders, leading to extended production times and potential delays.</li>
+                            <li>Requires specialized pre-treatment liquids for darker garments, adding an extra, messy step to the production process.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nanotechnology Printing Section -->
+            <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                <button class="accordion-header w-full text-left py-4 px-6 md:px-8 text-xl sm:text-2xl font-semibold bg-gray-700 hover:bg-gray-600 transition duration-300 rounded-b-xl focus:outline-none">
+                    <span>Nanotechnology Printing</span>
+                    <!-- Clickable indicator icon for accordion -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400 ml-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+                <div class="accordion-content p-6 md:p-8 hidden">
+                    <p class="mb-6 text-gray-300 leading-relaxed text-base sm:text-lg">
+                        Nanotechnology printing utilizes materials engineered at the nanoscale to create advanced, functional prints with unique properties, pushing the boundaries of traditional garment decoration.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-6 justify-center">
+                        <button class="toggle-button neon-button" data-target="nanotech-features">
+                            <span>Explore Nanoprints</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                        </button>
+                    </div>
+
+                    <div id="nanotech-features" class="content-panel bg-gray-700 p-5 rounded-lg border border-gray-600 hidden">
+                        <h4 class="font-bold text-lg text-blue-400 mb-3">Key Features of Nanotechnology Printing:</h4>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-200 text-base sm:text-lg">
+                            <li>Visible in Specific Conditions: Includes printing that is only visible in the open, and printing that is only visible in the dark, offering innovative design possibilities.</li>
+                            <li>Revised Nanoprints: Designs can be meticulously revised and integrated to fit the specific aesthetics and functional requirements of the garment.</li>
+                            <li>Enhanced Durability: Nanomaterials can significantly improve the abrasion resistance and washability of prints.</li>
+                            <li>Advanced Functionality: Potential for prints that are water-repellent, anti-microbial, UV-protective, or even self-cleaning.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-auto py-6 bg-gray-950 text-gray-400 text-center text-sm">
+        2025. Conbello Textile. All rights reserved.
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            const toggleButtons = document.querySelectorAll('.toggle-button');
+
+            // Accordion functionality
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const content = header.nextElementSibling;
+                    const isActive = header.classList.contains('active');
+
+                    // Close all other accordions and their content
+                    accordionHeaders.forEach(otherHeader => {
+                        if (otherHeader !== header) {
+                            otherHeader.classList.remove('active');
+                            otherHeader.nextElementSibling.classList.add('hidden');
+                            // Hide all content panels within other accordions
+                            otherHeader.nextElementSibling.querySelectorAll('.content-panel').forEach(panel => {
+                                panel.classList.add('hidden');
+                            });
+                        }
+                    });
+
+                    // Toggle current accordion
+                    if (isActive) {
+                        header.classList.remove('active');
+                        content.classList.add('hidden');
+                        // Hide all content panels if accordion is closed
+                        content.querySelectorAll('.content-panel').forEach(panel => {
+                            panel.classList.add('hidden');
+                        });
+                    } else {
+                        header.classList.add('active');
+                        content.classList.remove('hidden');
+                    }
+                });
+            });
+
+            // Pros/Cons button functionality
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetId = button.dataset.target;
+                    const targetPanel = document.getElementById(targetId);
+                    const currentAccordionContent = button.closest('.accordion-content');
+
+                    // Hide all content panels within the current accordion content
+                    currentAccordionContent.querySelectorAll('.content-panel').forEach(panel => {
+                        if (panel !== targetPanel) {
+                            panel.classList.add('hidden');
+                        }
+                    });
+
+                    // Toggle the visibility of the target panel
+                    targetPanel.classList.toggle('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
